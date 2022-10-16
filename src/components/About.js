@@ -13,7 +13,7 @@ const About = () => {
                 sign language gesture. Such a system also allows people to be united and happy. 
                 Those who need to communicate using sign language will be happy to be heard and understood. 
                 They will be motivated to "speak up" as people try to "listen" to them.</h3>
-            <img src="https://mediapipe.dev/images/mobile/hand_crops.png" alt="hand" />
+            <img className="photo1" src="https://mediapipe.dev/images/mobile/hand_crops.png" alt="hand" />
 
             <h1>Our aim</h1>
             <h3>Our goal is to create a program that will recognize hand gestures, 
