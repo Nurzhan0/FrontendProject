@@ -9,7 +9,7 @@ const Navbar = () => {
     
     return(
         <nav className="navbar">
-                <h3 className="logo">Logo</h3>
+                <h3 className="logo">HandGesture</h3>
  
                 <ul className =  {Mobile ? "nav-links-mobile" : "nav-links"} onClick = {() => setMobile}>
                     <Link to="/">
