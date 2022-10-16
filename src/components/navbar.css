@@ -118,3 +118,36 @@ button {
         font-size: 50px;
     }
 }
+
+#light {
+    background-color: white;
+}
+
+#dark {
+    background-color: black;
+}
+
+#light li {
+    color: black;
+}
+
+#dark li {
+    color: white;
+}
+
+#light h3 {
+    color: #4da6ff;
+}
+
+#dark h3 {
+    color: #4da6ff;
+}
+
+.switch {
+    display: flex;
+    width: 5vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
