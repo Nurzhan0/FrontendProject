@@ -17,7 +17,10 @@ const Navbar = () => {
     return(
         <ThemeContext.Provider value={{theme, toggleTheme}}>
         <nav className="navbar" id = {theme}>
-                <h3 className="logo" id = {theme}>HandGesture</h3>
+                <h3 className="logo"
+                 id = {theme}>
+                    <Link to = "/">HandGesture</Link>
+                 </h3>
  
                 <ul className =  {Mobile ? "nav-links-mobile" : "nav-links"} onClick = {() => setMobile} id = {theme}>
                     <Link to="/">

@@ -36,3 +36,125 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  text-align: center;
+}
+
+.Buttons-wrap {
+  z-index: 20;
+  justify-self: flex-start;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: line;
+  align-items: center;
+  justify-content: center;
+}
+
+.Buttons-wrap button {
+  z-index: 500;
+  font-weight: 700;
+  font-size: 0.6em;
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+  border: none;
+  cursor: pointer;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(79, 161, 209);
+  box-shadow: 0 -3px rgb(52, 126, 163) inset;
+  transition: 0.2s;
+}
+
+.Buttons-wrap button:hover {
+  background: rgb(42, 128, 179);
+}
+
+.App-header {
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Video-zone {
+  max-width: 800px;
+}
+.Video-zone canvas {
+  position: absolute;
+}
+
+.captures {
+  z-index: 999;
+  width: fit-content;
+  height: 200px;
+}
+
+.ImageView {
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(22, 24, 27, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeImageView input {
+  width: 3em;
+  background-color: #555555;
+}
+
+.actionsImageView input {
+  padding: 0.5em 1.5em;
+  width: 2em;
+  margin: 0 1em;
+}
+
+.closeImageView {
+  position: absolute;
+  z-index: 999;
+
+  top: 1em;
+  right: 1em;
+}
+
+.actionsImageView {
+  position: absolute;
+  z-index: 999;
+
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.deleteAllBut {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-weight: 700;
+  font-size: 0.5em;
+  color: white;
+  text-decoration: none;
+  margin: 1em;
+  border: none;
+  cursor: pointer;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(255, 92, 54);
+  box-shadow: 0 -3px rgb(170, 61, 37) inset;
+  transition: 0.2s;
+}
+.deleteAllBut:hover {
+  background: rgb(170, 61, 37);
+}

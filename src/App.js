@@ -1,11 +1,13 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 
 import './App.css';
+import WebcamApp  from './components/WebcamApp';
+import WebcamImage from './components/WebcamImage';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/" component = {Home} exact><Home/></Route>
           <Route path="/about" component = {About} exact><About/></Route>
           <Route path="/contact" component = {Contact} exact><Contact/></Route>
+          <Route path="/webcam" component = {WebcamImage} exact><WebcamImage/></Route>
         </Switch>
       </Router>
     </>
