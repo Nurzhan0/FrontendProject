@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
     font-family: "Titillium Web", sans-serif;
 }
 
 .hero-1 {
+    padding: 0;
+    margin: 0;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 0;
 }
 
 .hero-1 h1 {
@@ -32,10 +34,26 @@
 
 }
 
-#light {
-    background-color: white;
+#light li {
+    color: black;
 }
 
-#dark {
-    background-color: black;
+#dark li {
+    color: white;
+}
+
+#light h1 {
+    color: black ;
+}
+
+#dark h1 {
+    color: white;
+}
+
+#light h4 {
+    color: black ;
+}
+
+#dark h4 {
+    color: white;
 }

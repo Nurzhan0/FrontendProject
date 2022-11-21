@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./contact.css"
+import { ThemeContext } from "../App";
 
 const Contact = () => {
+    const {theme} = useContext(ThemeContext)
     return(
-        <section className="hero-1">
+        <section className="hero-1" id = {theme}>
             <h1>Our contacts</h1>
             <div class="grid-container">
                 <div class="grid-item">

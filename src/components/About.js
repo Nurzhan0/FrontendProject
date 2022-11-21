@@ -1,19 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./about.css"
 import { createContext, useState } from "react";
-import Navbar from "./Navbar";
-import ReactSwitch from "react-switch";
-
-export const ThemeContext = createContext(Navbar.ReactSwitch)
+import { ThemeContext } from "../App";
 
 const About = () => {
-
-    const[theme, setTheme] = useState("light") 
-    const toggleTheme = () => {
-        setTheme((curr) => (curr == "light" ? "dark" : "light"));
-    };
+    const {theme} = useContext(ThemeContext)
     return(
-        <ThemeContext.Provider value={{theme, toggleTheme}}>
         <section className = "hero-1" id = {theme}>
             <h1>About project</h1>
             <h4>This system for interacting with the deaf and dumb using gestures, 
@@ -37,7 +29,6 @@ const About = () => {
             </h4>
             <img className="photo1" src="https://www.smekenseducation.com/wp-content/uploads/2020/06/TalkMovesIcons-scaled.jpg" alt="hand" />
         </section>
-        </ThemeContext.Provider>
     )
 }
 
