@@ -17,11 +17,11 @@ a {
 }
 
 .navbar {
-    height: 10vh;
+    height: 15vh;
     line-height: 10vh;
     box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
     display: flex;
-    justify-content: space-; 
+    justify-content: space; 
     align-items: center;
     padding: 0 2rem;
 }
@@ -150,4 +150,3 @@ button {
     justify-content: center;
     align-items: center;
 }
-

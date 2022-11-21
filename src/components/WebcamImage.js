@@ -1,7 +1,11 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useRef, useState, useContext } from "react";
 import Webcam from "react-webcam";
+import { ThemeContext } from "../App";
+import './webcam.css';
+
 
 function WebcamImage() {
+  const {theme} = useContext(ThemeContext)
   const [img, setImg] = useState(null);
   const webcamRef = useRef(null);
 
@@ -17,7 +21,7 @@ function WebcamImage() {
   }, [webcamRef]);
 
   return (
-    <div className="container mx-auto px-40">
+    <div className="containerAll" id= {theme}>
     <div className="Container">
       {img === null ? (
         <>
@@ -30,8 +34,8 @@ function WebcamImage() {
             screenshotFormat="image/jpeg"
             videoConstraints={videoConstraints}
           />
-          <div >
-          <button className="rounded-2xl px-10 mb-5 w-auto h-10 bg-green-600 hover:bg-green-500 gap-4" 
+          <div className="btn-container">
+          <button className="btn1" 
           onClick={capture}>Take a photo
           </button>
           </div>
@@ -40,7 +44,7 @@ function WebcamImage() {
         <>
           <img src={img} alt="screenshot" />
           <div>
-          <button className="rounded-2xl px-10 mb-5 w-auto h-10 bg-red-600 hover:bg-red-500" onClick={() => setImg(null)}>Retake</button>
+          <button className="btn2" onClick={() => setImg(null)}>Retake</button>
           </div>
         </>
       )}

@@ -1,21 +1,18 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState, useTransition } from "react";
 import { Link } from "react-router-dom"
 import "./navbar.css"
 import {FaBars} from "react-icons/fa"
 import {ImCross} from "react-icons/im"
 import ReactSwitch from "react-switch";
-
-export const ThemeContext = createContext(null)
+import { ThemeContext } from "../App";
 
 const Navbar = () => {
     const[Mobile, setMobile] = useState(false)
-    const[theme, setTheme] = useState("light") 
-    const toggleTheme = () => {
-        setTheme((curr) => (curr == "light" ? "dark" : "light"));
-    };
-    
+    const {theme, toggleTheme} = useContext(ThemeContext)
+    console.log(theme);
+
     return(
-        <ThemeContext.Provider value={{theme, toggleTheme}}>
+        <div className="all">
         <nav className="navbar" id = {theme}>
                 <h3 className="logo"
                  id = {theme}>
@@ -41,7 +38,7 @@ const Navbar = () => {
                     {Mobile? <ImCross/> : <FaBars/>}
                 </button>
         </nav>
-        </ThemeContext.Provider>
+        </div>
     )
 }
 
