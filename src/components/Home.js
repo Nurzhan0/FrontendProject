@@ -49,6 +49,9 @@ const Home = () => {
                  <Link to="/about">
                      <button className="btn2">LEARN MORE</button>
                  </Link>
+                 <Link to="/form">
+                     <button className="btn1">UPLOAD IMAGE</button>
+                 </Link>
              </div>
 
             </div>
