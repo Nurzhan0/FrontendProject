@@ -12,6 +12,8 @@ import WebcamImage from './components/WebcamImage';
 import { useState } from 'react';
 import { createContext } from 'react';
 import UploadImage from './components/UploadImage';
+import AdminPanel from './components/AdminPanel';
+
 
 export const ThemeContext = createContext()
 
@@ -32,10 +34,12 @@ function App() {
           <Route path="/contact" component = {Contact} exact><Contact/></Route>
           <Route path="/webcam" component = {WebcamImage} exact><WebcamImage/></Route>
           <Route path="/form" component = {UploadImage} exact><UploadImage/></Route>
+          <Route path="/admin" component = {AdminPanel} exact><AdminPanel/></Route>
         </Switch>
         </ThemeContext.Provider>
       </Router>
     </>
+    
   );
 }
 

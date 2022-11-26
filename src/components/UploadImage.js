@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./upload-image.css"
 import axios from "axios"
+import { ThemeContext } from "../App";
 
 function UploadImage() {
     const [image, setImage] = useState('')
@@ -21,7 +22,10 @@ function UploadImage() {
     return (
         <div className="UploadImage">
             <input type="file" name="file" onChange={fileSelectedHandler}/>
-            <button onClick={fileUploadhandler}>Upload</button>
+        
+            <div className="btn-upload">
+                <button onClick={fileUploadhandler}>Upload</button>
+            </div>
         </div>
     );
 }
