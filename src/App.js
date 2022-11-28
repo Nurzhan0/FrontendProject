@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import Login from './components/Login';
+import Register from './components/Register';
 
 import './App.css';
 import WebcamApp  from './components/WebcamApp';
@@ -32,6 +34,9 @@ function App() {
           <Route path="/contact" component = {Contact} exact><Contact/></Route>
           <Route path="/webcam" component = {WebcamImage} exact><WebcamImage/></Route>
           <Route path="/form" component = {UploadImage} exact><UploadImage/></Route>
+          <Route path="/login" component={Login} exact><Login/></Route>
+          <Route path="/register" component={Register}><Register/></Route>
+                
         </Switch>
         </ThemeContext.Provider>
       </Router>

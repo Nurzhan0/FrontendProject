@@ -29,6 +29,9 @@ const Navbar = () => {
                     <Link to="/contact">
                        <li>Contact</li>
                     </Link>
+                    <Link to="/login">
+                       <li>Login</li>
+                    </Link>
                     <li><b>Change theme</b></li>
                 </ul>
                 <div className="switch">
