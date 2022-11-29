@@ -10,7 +10,7 @@ const Register = () => {
     const submit = async (e: SyntheticEvent) => {
         e.preventDefault();
 
-        await fetch('http://localhost:8080/register', {
+        await fetch('http://localhost:8000/register/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'},

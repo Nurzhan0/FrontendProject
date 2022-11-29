@@ -14,6 +14,7 @@ import WebcamImage from './components/WebcamImage';
 import { useState } from 'react';
 import { createContext } from 'react';
 import UploadImage from './components/UploadImage';
+import UploadVideo from './components/UploadVideo';
 
 export const ThemeContext = createContext()
 
@@ -33,7 +34,8 @@ function App() {
           <Route path="/about" component = {About} exact><About/></Route>
           <Route path="/contact" component = {Contact} exact><Contact/></Route>
           <Route path="/webcam" component = {WebcamImage} exact><WebcamImage/></Route>
-          <Route path="/form" component = {UploadImage} exact><UploadImage/></Route>
+          <Route path="/image" component = {UploadImage} exact><UploadImage/></Route>
+          <Route path="/video" component = {UploadVideo} exact><UploadVideo/></Route>
           <Route path="/login" component={Login} exact><Login/></Route>
           <Route path="/register" component={Register}><Register/></Route>
                 
