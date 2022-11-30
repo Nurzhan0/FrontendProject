@@ -15,7 +15,7 @@ function UploadImage() {
     function fileUploadhandler() {
         const fd = new FormData()
         fd.append("image", image)
-        fd.append("language", "kz")
+        fd.append("language", "ru")
         axios.post("http://127.0.0.1:8000/api/image/", fd)
             .then(res => res.data)
             .then(res => setResultText(
