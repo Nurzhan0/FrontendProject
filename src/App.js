@@ -15,6 +15,7 @@ import { useState } from 'react';
 import { createContext } from 'react';
 import UploadImage from './components/UploadImage';
 import UploadVideo from './components/UploadVideo';
+import AdminPanel from './components/AdminPanel';
 
 export const ThemeContext = createContext()
 
@@ -38,7 +39,7 @@ function App() {
           <Route path="/video" component = {UploadVideo} exact><UploadVideo/></Route>
           <Route path="/login" component={Login} exact><Login/></Route>
           <Route path="/register" component={Register}><Register/></Route>
-                
+          <Route path="/admin" component = {AdminPanel} exact><AdminPanel/></Route>
         </Switch>
         </ThemeContext.Provider>
       </Router>
